@@ -10,8 +10,12 @@ const posts = [
 
 const writer = [];
 
-for (key in posts) {
-  writer.push(posts[key].author)
-}
+// for (key in posts) {
+//   writer.push(posts[key].author)
+// }
+
+// console.log(writer)
+
+posts.forEach(({ author }) => writer.push(author))
 
 console.log(writer)

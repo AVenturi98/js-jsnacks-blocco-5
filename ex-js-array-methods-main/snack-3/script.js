@@ -5,9 +5,13 @@ const numbers = [2, 8, 4, 7, 2, 87];
 
 const numberPlus = []; 
 
-for (i = 0; i < numbers.length; i++) {
+// for (i = 0; i < numbers.length; i++) {
 
-    const elements = numbers[i] + 1;
+//     const elements = numbers[i] + 1;
 
-    console.log(elements)
-}
+//     console.log(elements)
+// }
+
+numbers.forEach((num) => numberPlus.push( num + 1 ))
+
+console.log(numberPlus)

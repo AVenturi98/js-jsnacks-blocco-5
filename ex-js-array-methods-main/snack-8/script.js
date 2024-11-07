@@ -3,19 +3,19 @@ const students = [
     id: 1,
     name: 'Marco Lanci',
     age: 32,
-    class: '3C'
+    classe: '3C'
   },
   {
     id: 2,
     name: 'Mario Banfi',
     age: 34,
-    class: '4A'
+    classe: '4A'
   },
   {
     id: 3,
     name: 'Luigi Banzi',
     age: 33,
-    class: '5B'
+    classe: '5B'
   },
 ];
 
@@ -23,5 +23,9 @@ const students = [
 // Risultato: '3C'
 
 // console.log(students[0].class)
+
+students.forEach(({ classe, name  }) => {
+  if (name === 'Marco Lanci') return console.log(classe)
+})
 
 

@@ -7,6 +7,8 @@ const people = [
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
-for (key in people) {
-  console.log(people[key].name)
-}
+// for (key in people) {
+//   console.log(people[key].name)
+// }
+
+people.forEach(({ name }) => console.log(name))

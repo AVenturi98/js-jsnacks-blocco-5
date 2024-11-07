@@ -4,16 +4,21 @@ const nums = [2, 8, 4, 7, 12, 87];
 // Risultato: [2, 8, 4, 12]
 const newNum = [];
 
-for (i = 0; i < nums.length; i++) {
+// for (i = 0; i < nums.length; i++) {
 
-    const even = nums[i];
+//     const even = nums[i];
 
-    const isEven = even % 2;
+//     const isEven = even % 2;
 
-    if (isEven === 0) {
-        newNum.push(even)
-    }
+//     if (isEven === 0) {
+//         newNum.push(even)
+//     }
     
-}
+// }
+
+nums.forEach((num) => {
+    if (num % 2 === 0) return newNum.push(num)
+    })
 
 console.log(newNum)
+

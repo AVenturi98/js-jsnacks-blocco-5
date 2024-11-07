@@ -16,17 +16,23 @@ const zucchine = [
 const more = [];
 const low = [];
 
-for (let i = 0; i < zucchine.length; i++) {
+// for (let i = 0; i < zucchine.length; i++) {
 
-  const elements = zucchine[i];
+//   const elements = zucchine[i];
   
-  const length = elements['length'];
+//   const length = elements['length'];
   
+//   if (length > 15) {
+//     more.push(elements);
+//   }
+//   else low.push(elements)
+// }
+
+zucchine.forEach(({ length }) => {
   if (length > 15) {
-    more.push(elements);
-  }
-  else low.push(elements)
-}
+    more.push(zucchine);
+  } else low.push(zucchine)
+})
 
-console.log(more)
-console.log(low)
+console.log('More: ', more)
+console.log('Low: ',low)
